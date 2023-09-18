@@ -14,7 +14,7 @@ public class FollowCam : MonoBehaviour
 
     [Header("Set Dynamically")]
 
-    //The Ddesired z pos of the camera
+    //The Desired z pos of the camera
     public float camZ;
     
     
@@ -27,11 +27,10 @@ public class FollowCam : MonoBehaviour
     void FixedUpdate()
     {
         //If there's only one line following an if, it doesn't need braces
-        //if (POI == null) return; //Return if there's no POI
+        //if (POI == null) return; //Return if there's no poi
 
         //Get the position of the POI
         //Vector3 destination = POI.transform.position;
-
         Vector3 destination;
 
         //If there's no POI, return to P: [0, 0, 0]

@@ -28,7 +28,7 @@ public class ProjectileLine : MonoBehaviour
     }
 
     //This is a property (that is, a method masquerading a field)
-    public GameObject POI
+    public GameObject poi
     {
         get
         {
@@ -71,7 +71,7 @@ public class ProjectileLine : MonoBehaviour
         if(points.Count == 0)
         {
             //If this is the launch point...
-            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS; //To be defeated
+            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS; //To be defined
 
             //...it adds an extra bit of line to aiming later
             points.Add(pt + launchPosDiff);

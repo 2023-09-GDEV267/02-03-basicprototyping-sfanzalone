@@ -50,13 +50,13 @@ public class Cloud : MonoBehaviour
     }
 
     // Update is called once per frame
-    //void Update()
-    //{
+    void Update()
+    {
        // if (Input.GetKeyDown(KeyCode.Space))
        // {
        // 	Restart();
        // }
-    //}
+    }
 
     void Restart() {
     	// Clear out old spheres 
