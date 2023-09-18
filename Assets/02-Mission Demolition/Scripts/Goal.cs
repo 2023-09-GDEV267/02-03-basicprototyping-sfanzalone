@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
+	//A static field accessible by code anywhere
 	static public bool 	goalMet = false;
 
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerEnter(Collider other)
+	{
 		// when the trigger is hit by something
 		// check to see if it's a Projectile 
-		if (other.gameObject.tag == "Projectile") {
+		if (other.gameObject.tag == "Projectile")
+		{
 			// if so, set goalMet = true
 			Goal.goalMet = true;
 
