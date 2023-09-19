@@ -15,7 +15,7 @@ public class ProjectileLine : MonoBehaviour
 
     private void Awake()
     {
-        S = this; //Set singleton
+        S = this; //Set the singleton
 
         //Get a reference to the LineRenderer
         line = GetComponent<LineRenderer>();
@@ -62,16 +62,16 @@ public class ProjectileLine : MonoBehaviour
         //This is called to add a point to the line
         Vector3 pt = _poi.transform.position;
 
-        if(points.Count > 0 && (pt - lastPoint).magnitude < minDist)
+        if (points.Count > 0 && (pt - lastPoint).magnitude < minDist)
         {
             //If the point isn't far enough from the last point, it returns
             return;
         }
 
-        if(points.Count == 0)
+        if (points.Count == 0)
         {
             //If this is the launch point...
-            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS; //To be defined
+            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS(); //To be defined
 
             //...it adds an extra bit of line to aiming later
             points.Add(pt + launchPosDiff);
@@ -94,6 +94,7 @@ public class ProjectileLine : MonoBehaviour
             line.SetPosition(points.Count - 1, lastPoint);
             line.enabled = true;
         }
+    }
 
         //Returns the location of the most recently added point
         public Vector3 lastPoint
@@ -109,7 +110,6 @@ public class ProjectileLine : MonoBehaviour
                 return (points[points.Count - 1]);
             }
         }
-    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -129,19 +129,15 @@ public class ProjectileLine : MonoBehaviour
             {
                 return; //Reutrn if we didn't find a poi
             }
+        }
 
-            else
-            {
-                return; //Reutrn if we didn't find a poi
-            }
-    }
+        //If there is a poi, it's loc is added every FixedUpdate
+        AddPoint();
 
-    //If there is a poi, it's loc is added every FixedUpdate
-    AddPoint();
-
-    if(FollowCam.POI == null)
-    {
-        //Once FollowCam.POI is null, make the local poi null too
-        poi = null;
+        if(FollowCam.POI == null)
+        {
+            //Once FollowCam.POI is null, make the local poi null too
+            poi = null;
+        }
     }
 }

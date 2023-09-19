@@ -14,7 +14,7 @@ public class MissionDemolition : MonoBehaviour
 {
     static private MissionDemolition S; //A private Singleton
 
-    [Header("Set in Constructor")]
+    [Header("Set in Inspector")]
 
     public Text uitLevel; //The UIText_Level Text
     public Text uitShots; //The UIText_Shots Text
@@ -140,7 +140,7 @@ public class MissionDemolition : MonoBehaviour
         }
 
         //Static method that allows code anywhere to increment shotsTaken
-        public static void ShotsFired()
+        static void ShotsFired()
         {
             S.shotsTaken++;
         }
