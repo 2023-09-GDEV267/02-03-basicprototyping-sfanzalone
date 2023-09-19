@@ -13,7 +13,7 @@ public class ProjectileLine : MonoBehaviour
     private GameObject _poi;
     private List<Vector3> points;
 
-    private void Awake()
+    void Awake()
     {
         S = this; //Set the singleton
 
@@ -119,9 +119,14 @@ public class ProjectileLine : MonoBehaviour
             //If there's no poi, search for one
             if(FollowCam.POI != null)
             {
-                if(poi = FollowCam.POI.tag = "Projectile")
+                if(FollowCam.POI.tag == "Projectile")
                 {
-                    poi = FollowCam.POI.tag = "Projectile";
+                    poi = FollowCam.POI;
+                }
+
+                else
+                {
+                    return; //Reutrn if we didn't find a poi
                 }
             }
 
