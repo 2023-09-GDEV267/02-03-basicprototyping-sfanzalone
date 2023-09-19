@@ -21,15 +21,17 @@ public class Slingshot : MonoBehaviour
     public bool aimingMode;
     private Rigidbody projectileRigidBody;
 
-    static public Vector3 LAUNCH_POS()
+    static public Vector3 LAUNCH_POS
     {
         get
         { 
             if(S == null)
             {
                 return Vector3.zero;
-                return S.launchPos;
+                
             }
+
+            return S.launchPos;
         }
     }
 

@@ -71,7 +71,7 @@ public class ProjectileLine : MonoBehaviour
         if (points.Count == 0)
         {
             //If this is the launch point...
-            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS(); //To be defined
+            Vector3 launchPosDiff = pt - Slingshot.LAUNCH_POS; //To be defined
 
             //...it adds an extra bit of line to aiming later
             points.Add(pt + launchPosDiff);
