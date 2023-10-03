@@ -44,7 +44,8 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Goal"))
         {
-            //other.gameObject.SetActive(false);
+            //Prints a message in the debugger
+            Debug.Log("Congradulations!  You Win!");
         }
     }
 }
