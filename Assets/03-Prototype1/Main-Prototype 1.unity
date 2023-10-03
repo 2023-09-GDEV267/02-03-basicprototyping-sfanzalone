@@ -1821,6 +1821,7 @@ GameObject:
   - component: {fileID: 1800313127}
   - component: {fileID: 1800313126}
   - component: {fileID: 1800313125}
+  - component: {fileID: 1800313129}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Goal
@@ -1906,6 +1907,18 @@ Transform:
   m_Father: {fileID: 948503382}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800313129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800313124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14faa2c98f76552409b902a78e4153f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1862791421
 Mesh:
   m_ObjectHideFlags: 0
