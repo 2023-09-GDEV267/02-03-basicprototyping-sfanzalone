@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//This code originates from the Roll-a-Ball Project
+
 public class PlayerController : MonoBehaviour
 {
     private float speed = 5;
@@ -37,12 +39,12 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
-            other.gameObject.SetActive(true);
+            other.gameObject.SetActive(false);
         }
 
         if (other.gameObject.CompareTag("Goal"))
         {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
         }
     }
 }

@@ -176,11 +176,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_Name
-      value: Pickup (2)
+      value: PickUp (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_TagString
       value: PickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511992402218839014, guid: 7876589b91eb25249baa582487a09c52, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7876589b91eb25249baa582487a09c52, type: 3}
@@ -1618,11 +1622,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_Name
-      value: Pickup (1)
+      value: PickUp (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_TagString
       value: PickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511992402218839014, guid: 7876589b91eb25249baa582487a09c52, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7876589b91eb25249baa582487a09c52, type: 3}
@@ -1776,11 +1784,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_Name
-      value: Pickup
+      value: PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 6028332919419622121, guid: 7876589b91eb25249baa582487a09c52, type: 3}
       propertyPath: m_TagString
       value: PickUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511992402218839014, guid: 7876589b91eb25249baa582487a09c52, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7876589b91eb25249baa582487a09c52, type: 3}
