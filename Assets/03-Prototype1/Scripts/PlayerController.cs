@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
-            other.gameObject.SetActive(false);
+            other.gameObject.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Goal"))
